@@ -1,0 +1,76 @@
+body {
+  background: linear-gradient(135deg, #141428, #252553);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #58a6ff;
+}
+
+#controls {
+  margin: 20px;
+}
+
+#playBtn {
+  background: linear-gradient(135deg, #4CAF50, #2E8B57);
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+#playBtn:hover {
+  background: linear-gradient(135deg, #45a049, #3e8e41);
+}
+
+#statusBox {
+  background: rgba(255,255,255,0.1);
+  display: inline-block;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  text-align: left;
+  font-size: 1.1em;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+video {
+  width: 80%;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+#progressContainer {
+  position: relative;
+  width: 80%;
+  height: 10px;
+  background: #333;
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#progressFill {
+  position: absolute;
+  height: 100%;
+  background: #666;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+#playbackFill {
+  position: absolute;
+  height: 100%;
+  background: #e50914;
+  width: 0%;
+  transition: width 0.2s linear;
+}

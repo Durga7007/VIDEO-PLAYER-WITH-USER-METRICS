@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NPTEL On-Demand Video Streaming</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>🎥 NPTEL On-Demand Recorded Video Streaming</h1>
+
+  <!-- Control Buttons -->
+  <div id="controls">
+    <button id="playBtn">▶️ Play Video</button>
+  </div>
+
+  <!-- Status Information -->
+  <div id="statusBox">
+    <p>Connection: <span id="connStatus">Disconnected</span></p>
+    <p>Packets Received: <span id="packets">0</span></p>
+    <p>Total Data: <span id="dataSize">0 KB</span></p>
+    <p>Progress: <span id="progress">0%</span></p>
+  </div>
+
+  <!-- Progress Bar (Download + Playback) -->
+  <div id="progressContainer">
+    <div id="progressFill"></div>   <!-- Gray bar for total downloaded -->
+    <div id="playbackFill"></div>   <!-- Red bar for playback position -->
+  </div>
+
+  <!-- Real-Time Throughput Chart -->
+  <canvas id="packetChart" width="600" height="250"></canvas>
+
+  <!-- Video Player -->
+  <video id="videoPlayer" controls autoplay></video>
+
+  <!-- Client Script -->
+  <script src="client.js"></script>
+</body>
+</html>
