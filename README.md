@@ -175,10 +175,6 @@ Playback resume / seek support
 
 User analytics dashboard
 
-👨‍💻 Developed for
-
-NPTEL Web Technologies / Networking Systems Lab
-Department of Computer Science and Engineering
-Vignan’s Foundation for Science, Technology & Research (VFSTR)
+👨‍💻 Developed BY:
 
 © DURGASREE AVVARU
